@@ -7,7 +7,7 @@ const HeroSection: React.FC = () => {
       {/* Arkaplandaki shape */}
       <div className="absolute z-0">
       <Image
-        src="/BgShape.png"
+        src="/BgShape.svg"
         alt="#"
         width={1200}
         height={600}
