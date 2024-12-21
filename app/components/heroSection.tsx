@@ -5,14 +5,15 @@ const HeroSection: React.FC = () => {
   return (
     <div className="relative flex items-center justify-center h-screen bg-[#FDCA09] text-black text-center overflow-hidden">
       {/* Arkaplandaki shape */}
+      <div className="absolute z-0">
       <Image
         src="/BgShape.png"
         alt="#"
-        layout="fill"
+        width={1200}
+        height={600}
         objectFit="contain"
-        className="z-0 m-2"
       />
-
+</div>
       {/* Ortadaki Yazı */}
       <div className="z-20 mb-40">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold">
