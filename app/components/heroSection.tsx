@@ -16,7 +16,7 @@ const HeroSection: React.FC = () => {
 </div>
       {/* Ortadaki Yazı */}
       <div className="z-20 mb-40">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold">
           Let’s create something <br /> great together.
         </h1>
       </div>
