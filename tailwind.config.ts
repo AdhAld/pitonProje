@@ -13,6 +13,9 @@ export default {
         foreground: "var(--foreground)",
       },
     },
+    fontFamily: {
+      manr: ["Manrope", "sans-serif"]
+    }
   },
   plugins: [],
 } satisfies Config;
