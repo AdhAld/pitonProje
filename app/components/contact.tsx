@@ -3,37 +3,37 @@ import Image from "next/image";
 
 const Contact: React.FC = () => {
   return (
-    <div className="flex flex-wrap justify-center gap-60 p-32 bg-white">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 lg:p-32 bg-white">
       {/* Image */}
-      <div className="flex flex-col bg-[#FEF1E0] p-16 ml-16 sm:max-w-xs md:max-w-sm">
+      <div className="flex justify-center lg:justify-start bg-[#FEF1E0] p-8 lg:p-16">
         <Image
-          className="mt-10 ml-8"
+          className="mt-10"
           src="/formImage.png"
-          alt="Founder"
+          alt="Form Image"
           width={200}
           height={500}
         />
       </div>
 
       {/* Contact Form */}
-      <div className="flex flex-col items-center py-10">
+      <div className="flex flex-col justify-center items-center lg:items-end">
         {/* Form Başlığı */}
-        <h2 className="text-2xl font-bold text-right text-[#101010] mb-6">
+        <h2 className="text-2xl font-bold text-center lg:text-right text-[#101010] mb-6">
           we&apos;d love to hear <br /> from you
         </h2>
 
         {/* Form */}
-        <form className="w-full max-w-md space-y-4">
+        <form className="w-full max-w-md space-y-5">
           {/* Name Input */}
           <div>
-            <label className="sr-only text-purple-300" htmlFor="name">
+            <label className="sr-only" htmlFor="name">
               Name*
             </label>
             <input
               id="name"
               type="text"
               placeholder="Name*"
-              className="w-full border border-[#101010] px-4 py-2 text-gray-900 focus:outline-none focus:ring-2 focus:ring-black"
+              className="w-full border border-[#101010] px-4 py-2 text-[#101010] placeholder-[#101010]"
             />
           </div>
 
@@ -46,7 +46,7 @@ const Contact: React.FC = () => {
               id="email"
               type="email"
               placeholder="Email*"
-              className="w-full border border-[#101010] px-4 py-2 text-gray-900 focus:outline-none focus:ring-2 focus:ring-black"
+              className="w-full border border-[#101010] px-4 py-2 text-[#101010] placeholder-[#101010]"
             />
           </div>
 
@@ -59,11 +59,11 @@ const Contact: React.FC = () => {
               id="website"
               type="url"
               placeholder="Website URL*"
-              className="w-full border border-[#101010] px-4 py-2 text-gray-900 focus:outline-none focus:ring-2 focus:ring-black"
+              className="w-full border border-[#101010] px-4 py-2 text-[#101010] placeholder-[#101010]"
             />
           </div>
 
-          {/* Project Details Textarea */}
+          {/* Project Details */}
           <div>
             <label className="sr-only" htmlFor="details">
               Project Details*
@@ -71,15 +71,14 @@ const Contact: React.FC = () => {
             <textarea
               id="details"
               placeholder="Project Details*"
-              
-              className="w-full border border-[#101010] px-4 py-2 text-gray-900 focus:outline-none focus:ring-2 focus:ring-black"
+              className="w-full h-36 border border-[#101010] px-4 py-2 text-[#101010] placeholder-[#101010]"
             ></textarea>
           </div>
 
-          {/* Submit Button */}
+          {/* Button */}
           <button
             type="submit"
-            className="w-full bg-black text-white font-medium py-2 rounded-md hover:bg-gray-800 transition duration-200"
+            className="w-full bg-black text-white font-medium py-2 hover:bg-[#FEF1E0] hover:text-black transition duration-200"
           >
             Send Proposal
           </button>

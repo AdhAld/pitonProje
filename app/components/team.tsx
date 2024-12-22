@@ -12,7 +12,7 @@ const Team: React.FC = () => {
       </div>
 
       {/* Team Members */}
-      <div className="flex flex-wrap gap-10 pb-20">
+      <div className="flex flex-wrap justify-center gap-10 pb-20">
         {/* Founder */}
         <div className="flex flex-col bg-white border border-gray-100 shadow-lg p-5 sm:max-w-xs md:max-w-sm">
           <Image
