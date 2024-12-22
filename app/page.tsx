@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "./components/heroSection";
 import About from "./components/about";
 import Team from "./components/team";
+import Metrics from "./components/metrics";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroSection />
       <About />
       <Team />
+      <Metrics />
     </div>
   );
 }
