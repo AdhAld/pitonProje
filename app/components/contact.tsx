@@ -3,20 +3,20 @@ import Image from "next/image";
 
 const Contact: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 lg:p-32 bg-white">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 p-8 lg:p-32 bg-white">
       {/* Image */}
-      <div className="flex justify-center lg:justify-start bg-[#FEF1E0] p-8 lg:p-16">
+      <div className="flex justify-center lg:justify-center bg-[#FEF1E0] py-8 lg:py-10 lg:mx-28">
         <Image
           className="mt-10"
           src="/formImage.png"
           alt="Form Image"
-          width={200}
+          width={220}
           height={500}
         />
       </div>
 
       {/* Contact Form */}
-      <div className="flex flex-col justify-center items-center lg:items-end">
+      <div className="flex flex-col justify-center items-center lg:items-end px-16">
         {/* Form Başlığı */}
         <h2 className="text-2xl font-bold text-center lg:text-right text-[#101010] mb-6">
           we&apos;d love to hear <br /> from you
